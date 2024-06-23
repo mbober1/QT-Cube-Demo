@@ -75,9 +75,9 @@ void MainWidget::timerEvent(QTimerEvent *)
 {
     this->imu->update();
 
-    auto X = this->imu->get_X() / 2000;
-    auto Y = this->imu->get_Y() / 2000;
-    auto Z = this->imu->get_Z() / 2000;
+    auto X = this->imu->get_X() / 1000;
+    auto Y = this->imu->get_Y() / 1000;
+    auto Z = this->imu->get_Z() / 1000;
 
     // printf("%f \t%f \t%f\n", X, Y, Z);
     QVector3D angularSpeed2(X, Y, Z);
