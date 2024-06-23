@@ -79,7 +79,7 @@ void MainWidget::timerEvent(QTimerEvent *)
     auto Y = this->imu->get_Y() / 2000;
     auto Z = this->imu->get_Z() / 2000;
 
-    printf("%f \t%f \t%f\n", X, Y, Z);
+    // printf("%f \t%f \t%f\n", X, Y, Z);
     QVector3D angularSpeed2(X, Y, Z);
     rotationAxis = (rotationAxis + angularSpeed2);
 
