@@ -1,0 +1,100 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "cmake -B build -S . -G Ninja && cmake --build build",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      "problemMatcher": {
+          "pattern": [
+              {
+                  "regexp": ".",
+                  "file": 1,
+                  "location": 2,
+                  "message": 3
+              }
+          ],
+        }
+    },
+    
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "rm -rf build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+    },
+
+    {
+      "label": "Deploy to target",
+      "type": "shell",
+      "dependsOn": ["Build"],
+      "command": "/bin/sh -c '/usr/bin/rsync -aP build root@10.255.0.1:/home/mbober'",
+      "group": "none",
+      "problemMatcher": ["$eslint-compact"],
+      "presentation": {
+          "echo": false,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": true
+      }
+    },
+
+    {
+      "label": "Start remote gdbserver",
+      "type": "shell",
+      "dependsOn": ["Deploy to target"],
+      "command": "/bin/sh -c 'ssh -t root@10.255.0.1 /usr/bin/gdbserver localhost:3000 \"/home/mbober/build/cube -platform eglfs\"'",
+      "group": "none",
+      "presentation": {
+          "echo": false,
+          "reveal": "always",
+          "focus": true,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": true
+      },
+      "isBackground": true,
+      "problemMatcher": {
+          "pattern": [
+              {
+                  "regexp": ".",
+                  "file": 1,
+                  "location": 2,
+                  "message": 3
+              }
+          ],
+          "background": {
+              "activeOnStart": true,
+              "beginsPattern": "^.*Process*",
+              "endsPattern": "^.*Listening*"
+          }
+      }
+    },
+
+    {
+      "label": "Kill remote gdbserver",
+      "type": "shell",
+      "command": "/bin/sh -c 'ssh root@10.255.0.1 killall gdbserver' || true",
+      "group": "none",
+      "problemMatcher": ["$eslint-compact"],
+      "presentation": {
+          "echo": false,
+          "reveal": "silent",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": true
+      }
+    }
+  ]
+}

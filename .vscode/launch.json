@@ -1,0 +1,64 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "(gdb) Launch native",
+      "type": "cppdbg",
+      "request": "launch",
+      "preLaunchTask": "Build",
+      "program": "${workspaceFolder}/build/cube",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "Launch on target",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/cube",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "serverLaunchTimeout": 2000,
+      "logging": {
+          "engineLogging": true,
+          "trace": true,
+          "traceResponse": true,
+          "programOutput": true
+
+      },
+      "MIMode": "gdb",
+      "targetArchitecture": "arm64",
+      "preLaunchTask": "Start remote gdbserver",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          }
+      ],
+      "miDebuggerPath": "${env:OECORE_NATIVE_SYSROOT}/usr/bin/aarch64-oe-linux-musl/${env:GDB}",
+      "miDebuggerServerAddress": "10.255.0.1:3000",
+    }
+
+  ]
+
+}

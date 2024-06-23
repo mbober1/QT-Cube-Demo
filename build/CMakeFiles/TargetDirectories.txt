@@ -1,0 +1,5 @@
+/home/mbober/Documents/cube/build/CMakeFiles/cube.dir
+/home/mbober/Documents/cube/build/CMakeFiles/edit_cache.dir
+/home/mbober/Documents/cube/build/CMakeFiles/rebuild_cache.dir
+/home/mbober/Documents/cube/build/CMakeFiles/cube_autogen_timestamp_deps.dir
+/home/mbober/Documents/cube/build/CMakeFiles/cube_autogen.dir

@@ -1,0 +1,238 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Linux -  - aarch64
+      The host system is: Linux - 6.6.32-1-MANJARO - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/aarch64-oe-linux-musl-g++ -mcpu=cortex-a55+crypto;-mbranch-protection=standard;--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl
+      Build flags: -O2;-pipe;-g;-feliminate-unused-debug-types
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/mbober/Documents/cube/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/mbober/Documents/cube/build/CMakeFiles/CMakeScratch/TryCompile-lVjx3D"
+      binary: "/home/mbober/Documents/cube/build/CMakeFiles/CMakeScratch/TryCompile-lVjx3D"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+      CMAKE_SYSROOT: "/opt/beaver/sysroots/cortexa55-oe-linux-musl"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mbober/Documents/cube/build/CMakeFiles/CMakeScratch/TryCompile-lVjx3D'
+        
+        Run Build Command(s): /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/ninja -v cmTC_1d96c
+        [1/2] /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/aarch64-oe-linux-musl-g++   -mcpu=cortex-a55+crypto -mbranch-protection=standard --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/../aarch64-oe-linux/aarch64-oe-linux-g++
+        Target: aarch64-oe-linux
+        Configured with: ../../../../../../work-shared/gcc-13.3.0-r0/gcc-13.3.0/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=aarch64-oe-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-oe-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.3.0 --with-build-time-tools=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot-native/usr/aarch64-oe-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_1d96c.dir/'
+         /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/beaver/sysroots/cortexa55-oe-linux-musl -D_GNU_SOURCE /opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1d96c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmusl -mcpu=cortex-a55+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |
+         /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8.2-a+crc+fp16+rcpc+dotprod+crypto -mabi=lp64 -o CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o
+        GNU assembler version 2.42.0 (aarch64-oe-linux) using BFD version (GNU Binutils) 2.42.0.20240216
+        GNU C++17 (GCC) version 13.3.0 (aarch64-oe-linux)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/include"
+        ignoring nonexistent directory "/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/local/include"
+        ignoring nonexistent directory "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/../../../../../aarch64-oe-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0
+         /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux
+         /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward
+         /opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include
+         /opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed
+         /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/
+        End of search list.
+        Compiler executable checksum: 0bc1d6d3fa1fda0c0d40011bd45734df
+        COMPILER_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/
+        LIBRARY_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/
+        COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/aarch64-oe-linux-musl-g++   -mcpu=cortex-a55+crypto -mbranch-protection=standard --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl -O2 -pipe -g -feliminate-unused-debug-types -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1d96c   && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/../aarch64-oe-linux/aarch64-oe-linux-g++
+        COLLECT_LTO_WRAPPER=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/lto-wrapper
+        Target: aarch64-oe-linux
+        Configured with: ../../../../../../work-shared/gcc-13.3.0-r0/gcc-13.3.0/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=aarch64-oe-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-oe-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.3.0 --with-build-time-tools=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot-native/usr/aarch64-oe-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (GCC) 
+        COMPILER_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/
+        LIBRARY_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/
+        COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_1d96c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_1d96c.'
+         /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/collect2 -plugin /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3cyqGi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-aarch64.so.1 -X -EL -maarch64linux -o cmTC_1d96c /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crt1.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crti.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtbegin.o -L/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtend.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_1d96c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_1d96c.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0]
+          add: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux]
+          add: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward]
+          add: [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include]
+          add: [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed]
+          add: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/]
+        end of search list found
+        collapse include dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0]
+        collapse include dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux]
+        collapse include dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward]
+        collapse include dir [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include] ==> [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include]
+        collapse include dir [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed] ==> [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed]
+        collapse include dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include]
+        implicit include dirs: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0;/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux;/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward;/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include;/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed;/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(aarch64-oe-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/mbober/Documents/cube/build/CMakeFiles/CMakeScratch/TryCompile-lVjx3D']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/ninja -v cmTC_1d96c]
+        ignore line: [[1/2] /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/aarch64-oe-linux-musl-g++   -mcpu=cortex-a55+crypto -mbranch-protection=standard --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/../aarch64-oe-linux/aarch64-oe-linux-g++]
+        ignore line: [Target: aarch64-oe-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.3.0-r0/gcc-13.3.0/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=aarch64-oe-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-oe-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.3.0 --with-build-time-tools=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot-native/usr/aarch64-oe-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_1d96c.dir/']
+        ignore line: [ /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/beaver/sysroots/cortexa55-oe-linux-musl -D_GNU_SOURCE /opt/beaver/sysroots/x86_64-oesdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1d96c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmusl -mcpu=cortex-a55+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -version -feliminate-unused-debug-types -o - |]
+        ignore line: [ /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8.2-a+crc+fp16+rcpc+dotprod+crypto -mabi=lp64 -o CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [GNU assembler version 2.42.0 (aarch64-oe-linux) using BFD version (GNU Binutils) 2.42.0.20240216]
+        ignore line: [GNU C++17 (GCC) version 13.3.0 (aarch64-oe-linux)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/../../../../../aarch64-oe-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0]
+        ignore line: [ /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/aarch64-oe-linux]
+        ignore line: [ /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/c++/13.3.0/backward]
+        ignore line: [ /opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include]
+        ignore line: [ /opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/include-fixed]
+        ignore line: [ /opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/include/]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0bc1d6d3fa1fda0c0d40011bd45734df]
+        ignore line: [COMPILER_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/]
+        ignore line: [LIBRARY_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/aarch64-oe-linux-musl-g++   -mcpu=cortex-a55+crypto -mbranch-protection=standard --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl -O2 -pipe -g -feliminate-unused-debug-types -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed -v CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1d96c   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux-musl/../aarch64-oe-linux/aarch64-oe-linux-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/lto-wrapper]
+        ignore line: [Target: aarch64-oe-linux]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.3.0-r0/gcc-13.3.0/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=aarch64-oe-linux --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/bin/aarch64-oe-linux --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-oe-linux- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.3.0 --with-build-time-tools=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot-native/usr/aarch64-oe-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/home/mbober/yocto/radxa/build/tmp-musl/work/x86_64-nativesdk-oesdk-linux/gcc-cross-canadian-aarch64/13.3.0/recipe-sysroot --with-plugin-ld=ld --enable-poison-system-directories --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/]
+        ignore line: [LIBRARY_PATH=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0/:/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmusl' '-mcpu=cortex-a55+crypto' '-mbranch-protection=standard' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_1d96c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_1d96c.']
+        link line: [ /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/collect2 -plugin /opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3cyqGi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-aarch64.so.1 -X -EL -maarch64linux -o cmTC_1d96c /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crt1.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crti.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtbegin.o -L/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0 -L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtend.o /opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crtn.o]
+          arg [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/beaver/sysroots/x86_64-oesdk-linux/usr/libexec/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3cyqGi.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/opt/beaver/sysroots/cortexa55-oe-linux-musl] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_1d96c] ==> ignore
+          arg [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crt1.o] ==> obj [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crt1.o]
+          arg [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crti.o] ==> obj [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crti.o]
+          arg [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtbegin.o] ==> obj [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtbegin.o]
+          arg [-L/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0] ==> dir [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0]
+          arg [-L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0] ==> dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0]
+          arg [-L/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib] ==> dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib]
+          arg [-L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0] ==> dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0]
+          arg [-L/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib] ==> dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [CMakeFiles/cmTC_1d96c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtend.o] ==> obj [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtend.o]
+          arg [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crtn.o] ==> obj [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crtn.o]
+        collapse library dir [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0] ==> [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0]
+        collapse library dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0]
+        collapse library dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib]
+        collapse library dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0]
+        collapse library dir [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib] ==> [/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crt1.o;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crti.o;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtbegin.o;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0/crtend.o;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/crtn.o]
+        implicit dirs: [/opt/beaver/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-oe-linux/gcc/aarch64-oe-linux/13.3.0;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib/aarch64-oe-linux/13.3.0;/opt/beaver/sysroots/cortexa55-oe-linux-musl/lib;/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib/aarch64-oe-linux/13.3.0;/opt/beaver/sysroots/cortexa55-oe-linux-musl/usr/lib]
+        implicit fwks: []
+      
+      
+...

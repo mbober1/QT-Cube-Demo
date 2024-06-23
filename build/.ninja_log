@@ -1,0 +1,27 @@
+# ninja log v5
+2960	3251	1719155393868792597	cube	18f5fa3897de0c20
+180	3196	1719155115889524825	CMakeFiles/cube.dir/main.cpp.o	2f67a22a4ec50a45
+179	3192	1719155115889524825	CMakeFiles/cube.dir/cube_autogen/mocs_compilation.cpp.o	3e192603665084f1
+318	497	1719151582581620920	CMakeFiles/cube.dir/cube_autogen/EWIEGA46WW/qrc_textures.cpp.o	19210f6306055be1
+4	27	1719155390648671680	/home/mbober/Documents/cube/build/cube_autogen/timestamp	29a04a5ce1a775cc
+310	4569	1719151586641576032	CMakeFiles/cube.dir/geometryengine.cpp.o	7bb02cbc963698e4
+288	309	1719151582404956205	cube_autogen/EWIEGA46WW/qrc_textures.cpp	fdc9af17858e684
+4	27	1719155390648671680	/home/mbober/Documents/cube/build/cube_autogen/mocs_compilation.cpp	29a04a5ce1a775cc
+30	2960	1719155393565447865	CMakeFiles/cube.dir/mainwidget.cpp.o	219e22fb208375e0
+200	1935	1719154185882878848	CMakeFiles/cube.dir/mpu6050.cpp.o	f6e608dbe48d175e
+4	27	1719155390648671680	cube_autogen/mocs_compilation.cpp	29a04a5ce1a775cc
+287	303	1719151582401622909	/home/mbober/Documents/cube/build/cube_autogen/EWIEGA46WW/qrc_shaders.cpp	5f54154289fb653
+318	383	1719151582481622025	CMakeFiles/cube.dir/cube_autogen/EWIEGA46WW/qrc_shaders.cpp.o	e73470ee7a9314ba
+287	303	1719151582401622909	cube_autogen/EWIEGA46WW/qrc_shaders.cpp	5f54154289fb653
+288	309	1719151582404956205	/home/mbober/Documents/cube/build/cube_autogen/EWIEGA46WW/qrc_textures.cpp	fdc9af17858e684
+4	27	1719155390648671680	cube_autogen/timestamp	29a04a5ce1a775cc
+27	50	1719156369063111756	cube_autogen/timestamp	29a04a5ce1a775cc
+27	50	1719156369063111756	cube_autogen/mocs_compilation.cpp	29a04a5ce1a775cc
+27	50	1719156369063111756	/home/mbober/Documents/cube/build/cube_autogen/timestamp	29a04a5ce1a775cc
+27	50	1719156369063111756	/home/mbober/Documents/cube/build/cube_autogen/mocs_compilation.cpp	29a04a5ce1a775cc
+51	79	1719156369089779101	cube_autogen/EWIEGA46WW/qrc_textures.cpp	fdc9af17858e684
+51	79	1719156369089779101	/home/mbober/Documents/cube/build/cube_autogen/EWIEGA46WW/qrc_textures.cpp	fdc9af17858e684
+80	593	1719156369606458911	CMakeFiles/cube.dir/cube_autogen/EWIEGA46WW/qrc_textures.cpp.o	19210f6306055be1
+79	2758	1719156371746513395	CMakeFiles/cube.dir/main.cpp.o	2f67a22a4ec50a45
+79	2952	1719156371946518490	CMakeFiles/cube.dir/mainwidget.cpp.o	219e22fb208375e0
+2952	3246	1719156372253192974	cube	18f5fa3897de0c20
